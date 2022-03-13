@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>DFA-NeRF: Personalized Talking Head Generation via Disentangled Face Attributes Neural Rendering</title>
+    <!-- Bootstrap -->
+    <link href="./files/bootstrap-4.4.1.css" rel="stylesheet">
+    <link rel="stylesheet" href="./files/font-awesome.min.css">
+</head>
+
+<!-- cover -->
+
+<body>
+    <section>
+        <div class="jumbotron text-center mt-4">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h2>DFA-NeRF: Personalized Talking Head Generation via Disentangled Face Attributes Neural Rendering
+                        </h2>
+                        <!-- <h4 style="color:#5a6268;">Some Conference</h4> -->
+                        <!-- <hr> -->
+                        <h6><a href="" target="_blank">Shunyu Yao</a><sup>1</sup>
+                            &nbsp;&nbsp;&nbsp;&nbsp;
+
+                            <a href="" target="_blank">Ruizhe Zhong</a><sup>1</sup>
+                            &nbsp;&nbsp;&nbsp;&nbsp;
+
+                            <a href="" target="_blank">Yichao Yan</a><sup>1</sup>
+                            &nbsp;&nbsp;&nbsp;&nbsp;
+
+                            <!-- <a href="" target="_blank">Chen Yang</a><sup>1</sup>
+                            &nbsp;&nbsp;&nbsp;&nbsp; -->
+
+                            <a href="" target="_blank">Guangtao Zhai</a><sup>1</sup>
+                            &nbsp;&nbsp;&nbsp;&nbsp;
+
+                            <!-- <a href="" target="_blank">Junchi Yan</a><sup>1</sup>
+                            &nbsp;&nbsp;&nbsp;&nbsp; -->
+
+                            <a href="" target="_blank">Xiaokang Yang</a><sup>1</sup>
+                            &nbsp;&nbsp;&nbsp;&nbsp;
+
+
+                        </p>
+                            <sup>1</sup>Shanghai Jiao Tong University
+                            <!-- &nbsp;&nbsp;&nbsp; -->
+                            <!-- <sup>2</sup>Beijing Dilusense Technology Corporation -->
+                            <p>
+                                <!-- <sup>3</sup>Zhejiang University
+                                &nbsp;&nbsp;&nbsp;
+                                <sup>4</sup>Tsinghua University -->
+                            <ul class="nav nav-pills nav-justified">
+                                <li>
+                                    <a href="https://arxiv.org/abs/2201.00791" target="_blank">
+                                        <image src="image/paper_image.png" height="60px">
+                                            <h4><strong>Paper</strong></h4>
+                                    </a>
+                                </li>
+                                <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                <li>
+                                    <a href="https://www.bilibili.com/" target="_blank">
+                                        <image src="image/youtube_icon.png" height="60px">
+                                            <h4><strong>Video</strong></h4>
+                                    </a>
+                                </li> -->
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                <li>
+                                    <a href="" target="_blank">
+                                        <image src="image/GitHub.png" height="60px">
+                                            <h4><strong>Code</strong></h4>
+                                    </a>
+                                </li>
+                            </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- <div class="row">
+        <div class="col-md-4 col-md-offset-4 text-center">
+            
+        </div>
+    </div> -->
+
+
+    <section>
+        <div class="container">
+            <h3><b>Introduction</b></h3>
+            <div class="row">
+                <div class="col-12 text-center">
+                    <p class="text-justify">
+                        While recent advances in deep neural networks have made it possible to render high-quality images, generating photo-realistic and personalized talking head remains challenging. With the given audio, the key to tackling this task is synchronizing lip movement and simultaneously generating personalized attributes like head movement and eye blink. 
+In this work, we observe that the input audio is highly correlated to lip motion while less correlated to other personalized attributes (e.g., head movements).
+Inspired by this, we propose a novel framework based on neural radiance field to pursue high-fidelity and personalized talking head generation. Specifically, neural radiance field takes lip movement features and personalized attributes as two disentangled conditions, where lip movements are directly predicted from the audio inputs to achieve lip-synchronized generation.
+In the meantime, personalized attributes are sampled from a probabilistic model, where we design a Transformer-based variational autoencoder sampled from Gaussian Process to learn plausible and natural-looking head poses and eye blinks. Experiments on several benchmarks demonstrate that our method achieves significantly better results than state-of-the-art methods.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section>
+        <div class="container">
+            <h3><b>Demo</b></h3>
+            <div class="row">
+                <div class="col-12 text-center">
+                    <video width="712" height="400" src="video/web_demo.mp4" allowfullscreen controls></video>
+                    <p class="text-justify">
+                        <!-- Some content here. -->
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <h3><b>Pipeline</b></h3>
+            <div class="row">
+                <div class="col-12 text-center">
+                    <img src="image/framework.png" width="900"></img>
+                </p>
+                    <img src="image/introduction_fig.png" width="900"></img>
+                    <p class="text-justify">
+                        <!-- Some content here. -->
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    </p>
+    <!-- citing -->
+    <div class="container">
+        <div class="row ">
+            <div class="col-12">
+                <h3><b>Citation</b></h3>
+                <pre style="background-color: #e9eeef;padding: 1.25em 1.5em"><code>@article{yao2022dfa,
+    title={DFA-NeRF: Personalized Talking Head Generation via Disentangled Face Attributes Neural Rendering},
+    author={Yao, Shunyu and Zhong, RuiZhe and Yan, Yichao and Zhai, Guangtao and Yang, Xiaokang},
+    journal={arXiv preprint arXiv:2201.00791},
+    year={2022}
+}</code></pre>
+                <hr>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
